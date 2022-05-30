@@ -1,0 +1,300 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static 'blog/css/diseno.css' %}">
+
+    <title>ROCKBLOG</title>
+</head>
+
+
+<body>
+
+
+
+
+    <header>
+
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <h1>ROCKBLOG</h1>
+                </div>
+            </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg a navbar-dark  fs-4 bg-dark">
+            <div class="container-fluid">
+                <img class="img" src="https://cdn-icons-png.flaticon.com/512/26/26650.png" alt="guitarra">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+
+                        <li class="nav-item"><a class="nav-link " href="#">Reseñas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Calendario</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Noticias</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#">Playlist</a></li>
+
+
+                    </ul>
+                </div>
+
+
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="nav navbar-nav">
+                        <li class="inicio"><a class="nav-link" href="login.html">Iniciar Sesión</a></li>
+                        <li class="registro"><a class="nav-link" href="registrar.html">Registrarse</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+
+
+
+    </header>
+
+    <section id="contenido">
+
+        <article class="articulo">
+
+
+        <table border="1">Lista de noticias
+            <tr>
+                <th>titulo</th>
+                <th>cuerpo</th>
+                <th>fecha</th>
+            </tr>
+            {% for veh in post %}
+            <tr>
+                <th>{{veh.title}}</th>
+                <th>{{veh.body}}</th>
+                <th>{{veh.time}}</th>
+            </tr>
+            {% endfor %}
+        </table>
+
+
+            <h1>Mainstream</h1>
+        
+
+            <div class="contenedor">
+                <a href="metallica.html" target="_blank">
+                    <figure>
+
+                        <img src="https://picfiles.alphacoders.com/267/thumb-267821.jpg" alt="Metallica">
+                        <div class="capa">
+
+                            <h1 style="color: white;">Metallica</h1>
+
+                        </div>
+
+                    </figure>
+                </a>
+            </div>
+
+
+
+
+            <div class="contenedor">
+                <a href="anthrax.html" target="_blank">
+                    <figure>
+
+                        <img src="https://images4.alphacoders.com/195/thumbbig-195448.webp" alt="Anthrax">
+                        <div class="capa">
+                            <h1 style="color: white;">Anthrax</h1>
+                        </div>
+
+                    </figure>
+                </a>
+            </div>
+
+
+            <a href="megadeth.html" target="_blank">
+                <div class="contenedor">
+                    <figure>
+                        <img src="https://images.alphacoders.com/179/thumbbig-179843.webp" alt="Megadeth">
+                        <div class="capa">
+                            <h1 style="color: white;">Megadeth</h1>
+                        </div>
+
+                    </figure>
+
+                </div>
+
+            </a>
+            <a href="slayer.html" target="_blank">
+                <div class="contenedor">
+                    <figure>
+                        <img src="https://images6.alphacoders.com/882/thumbbig-882090.webp" alt="Slayer">
+                        <div class="capa">
+                            <h1 style="color: white;">Slayer</h1>
+                        </div>
+
+                    </figure>
+
+                </div>
+
+            </a>
+            <a href="ironmaiden.html" target="_blank">
+                <div class="contenedor">
+                    <figure>
+                        <img src="https://images4.alphacoders.com/566/thumbbig-566818.webp" alt="Iron Maiden">
+                        <div class="capa">
+                            <h1 style="color: white;">Iron Maiden</h1>
+                        </div>
+
+                    </figure>
+
+                </div>
+
+            </a>
+            <a href="blacksabbath.html" target="_blank">
+                <div class="contenedor">
+                    <figure>
+                        <img src="https://images8.alphacoders.com/449/thumbbig-449213.webp" alt="Black Sabbath">
+                        <div class="capa">
+                            <h1 style="color: white;">Black Sabbath</h1>
+                        </div>
+
+                    </figure>
+
+                </div>
+            </a>
+            <a href="motorhead.html" target="_blank">
+                <div class="contenedor">
+                    <figure>
+                        <img src="https://images2.alphacoders.com/277/thumbbig-277380.webp" alt="Motörhead">
+                        <div class="capa">
+                            <h1 style="color: white;">Motörhead</h1>
+                        </div>
+
+                    </figure>
+
+                </div>
+
+            </a>
+            <a href="pantera.html" target="_blank">
+                <div class="contenedor">
+                    <figure>
+                        <img src="https://images2.alphacoders.com/277/thumbbig-277420.webp" alt="Pantera">
+                        <div class="capa">
+                            <h1 style="color: white;">Pantera</h1>
+                        </div>
+
+                    </figure>
+
+                </div>
+
+            </a>
+        </article>
+
+
+    </section>
+
+    <aside>
+        <form>
+            <h6>Buscar banda</h6>
+            <input type="text">
+            <input type="submit" value="Buscar" />
+        </form>
+
+        
+    </aside>
+
+
+
+    <div class="clearfix"></div>
+    <!--para que no se suba el footer-->
+
+
+    <footer>
+        <div class="footer-content">
+            <h3>¿Quiéres estar al día con nuestra página?</h3>
+            <p>Si no quieres perderte nada del mundo del rock puedes darnos tu email para enviarte contenido cada vez que subamos nueva información y asi no te pierdas de nada. </p>
+
+
+            <form class="row g-3 needs-validation" novalidate>
+                <div class="col-md-12">
+                    <label for="validationCustom01" class="form-label">Ingrese correo</label>
+                    <input type="email" class="form-control" id="validationCustom01" value="ejemplo@gmail.com" required>
+                    <div class="valid-feedback">
+                        Correcto
+                    </div>
+                </div>
+
+                <div class="col-12">
+
+                    <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+            </form>
+
+
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-menu">
+                <ul class="f-menu">
+                    <li><a href="#contenedor">Inicio</a></li>
+                    <li><a href="">Sobre Nosotros</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+    <script>
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+        (function() {
+            'use strict'
+
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.querySelectorAll('.needs-validation')
+                // Loop over them and prevent submission
+            Array.prototype.slice.call(forms)
+                .forEach(function(form) {
+                    form.addEventListener('submit', function(event) {
+                        if (!form.checkValidity()) {
+                            event.preventDefault()
+                            event.stopPropagation()
+                        }
+
+                        form.classList.add('was-validated')
+                    }, false)
+                })
+        })()
+    </script>
+    <!---js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

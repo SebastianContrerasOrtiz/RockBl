@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loginRegistro.css">
+    <title>Iniciar Sesión</title>
+</head>
+
+<body>
+    <div class="formulario">
+
+        <form class="login-form" name="form" action="Index.html" method="POST" id="formularioLogin">
+            <p class="login-text">
+                <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-lock fa-stack-1x"></i>
+          </span>
+            </p>
+            <input type="email" id="correo" name="correo" class="login-username" autofocus="true" placeholder="Correo" />
+            <input type="password" id="contrasena" name="contrasena" class="login-password" placeholder="Contraseña" />
+
+            <div id="error"></div>
+            <input type="submit" name="Login" class="login-submit" />
+
+        </form>
+
+        <!--    <form class="login-form" name="form" action="Index.html" method="POST" id="formularioLogin">
+            <p class="login-text">
+                <span class="fa-stack fa-lg">
+            <i class="fa fa-circle fa-stack-2x"></i>
+            <i class="fa fa-lock fa-stack-1x"></i>
+          </span>
+            </p>
+            <input type="email" id="itCorreo" name="correo" class="login-username" autofocus="true" placeholder="Correo" />
+            <input type="password" id="itContrasena" name="contrasena" class="login-password" placeholder="Contraseña" />
+
+
+            <div id="mensaje1" class="errorLogin">Ingrese su correo</div>
+            <div id="mensaje2" class="errorLogin">Ingrese su contraseña</div>
+
+            <input type="submit" id="bEnviar" name="Login" class="login-submit" />
+
+        </form> -->
+
+    </div>
+
+    <a href="#" class="login-forgot-pass">¿Olvidaste tu contraseña?</a>
+    <div class="underlay-photo"></div>
+    <div class="underlay-black"></div>
+
+
+    <script src="javaScript/validarFormulario.js"></script>
+
+</body>
+
+</html>
